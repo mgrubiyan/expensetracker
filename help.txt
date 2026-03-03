@@ -1,0 +1,10 @@
+Expense Tracker Help
+
+Available commands:
+  add <description> <amount>  — Add an expense (example: add Lunch 500)
+  list                        — Show all expenses
+  summary                     — Show total amount of expenses
+  delete <ID>                 — Delete an expense by ID (example: delete 1)
+  clear                       — Delete al expenses
+  help                        — Show this help message
+  exit                        — Exit the program

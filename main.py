@@ -1,8 +1,6 @@
 from datetime import date
 import funcs
-f = open("expenseslist.txt", "w")
-f.close()
-ID = 1
+ID = funcs.getID()
 while z := input().split():
     match z[0]:
         case 'add':
@@ -20,3 +18,10 @@ while z := input().split():
             funcs.clear()
         case 'stop':
             break
+        case 'help':
+            funcs.hlp()
+        case _:
+            funcs.clear_screen()
+            print(f'Unknown command: '
+                  f'Use [help] for more info')
+            print()
